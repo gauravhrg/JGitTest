@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Checkout/Testing/Testing Maven Project/src/main/java/Delta/TestData/Query/DriverClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Checkout/Testing/Testing Maven Project/src/main/java/Delta/TestData/Query/Util/QueryBuilderUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Checkout/Testing/Testing Maven Project/src/main/java/Delta/TestData/Query/builder/ProcedureBuilder.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Checkout/Testing/Testing Maven Project/src/main/java/Delta/TestData/Query/git/GitHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Checkout/tpt-cxl-schema/src/main/java/com/tpt/flyway/SchemaManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Git1/r/r/tpt-cxl-robot-tests/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Git1/tpt-db-migrator/src/main/java/com/tpt/flyway/ExampleFlywayCallback.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="D:/Git1/tpt-db-migrator/src/main/java/com/tpt/flyway/Main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/cxl_20181004122926__testdata_update.sql">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
