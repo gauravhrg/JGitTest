@@ -8,8 +8,18 @@
   <artifactId>POC_1</artifactId>
   <version>1.0-SNAPSHOT</version>
 
+  <scm>
+    <developerConnection>scm:git:${project.scm.url}</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/gauravhrg/JGitTest.git</url>
+  </scm>
+
   <properties>
     <java.version>1.8</java.version>
+    <branch></branch>
+    <remote></remote>
+    <userName></userName>
+    <password></password>
   </properties>
   <build>
     <plugins>
@@ -48,6 +58,11 @@
       <artifactId>commons-io</artifactId>
       <version>2.5</version>
     </dependency>
+    <dependency>
+      <groupId>org.eclipse.jgit</groupId>
+      <artifactId>org.eclipse.jgit</artifactId>
+      <version>4.7.0.201704051617-r</version>
+    </dependency>
   </dependencies>
   <profiles>
     <profile>
@@ -74,8 +89,15 @@
                   <mainClass>test.TestDataReleasePrepare</mainClass>
                   <arguments>
                     <argument>${project.version}</argument>
-                    <argument>${project.basedir}/src/main/java/robotframework/testdata/reference_data
+                    <argument>
+                      ${project.basedir}/src/main/java/robotframework/testdata/reference_data
                     </argument>
+                    <argument>${project.scm.url}</argument>
+                    <argument>${project.basedir}</argument>
+                    <argument>${branch}</argument>
+                    <argument>${remote}</argument>
+                    <argument>${userName}</argument>
+                    <argument>${password}</argument>
                   </arguments>
                 </configuration>
               </execution>
@@ -85,4 +107,4 @@
       </build>
     </profile>
   </profiles>
-</project>
+</project> -D
