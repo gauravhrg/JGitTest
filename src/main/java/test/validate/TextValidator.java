@@ -1,5 +1,5 @@
-/**
- * Copyright 2000-2018 Triple Point Technology. All rights reserved.
+/*
+  Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
 package test.validate;
 
@@ -19,10 +19,9 @@ public class TextValidator extends AbstractValidator {
   }
 
   @Override
-  public boolean validate() throws IOException {
+  public List<String> validate() throws IOException {
 
     List<String> lines = FileUtils.readLines(fileToValidate, RelativePathConstants.ENCODING_UTF_8);
-    boolean flag = true;
 
     for (String line : lines) {
 
@@ -32,11 +31,10 @@ public class TextValidator extends AbstractValidator {
         String resourcePath = getAbsolutePath(line);
         File resourceFile = new File(resourcePath);
         if (!resourceFile.exists() && !resourceFile.getParentFile().exists()) {
-          printMessage("Text file", resourcePath, null);
-          flag = false;
+          appendErrorMessage("Text file", resourcePath, null);
         }
       }
     }
-    return flag;
+    return errorMessages;
   }
 }

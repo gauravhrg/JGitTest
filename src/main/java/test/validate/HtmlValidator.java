@@ -1,10 +1,11 @@
-/**
- * Copyright 2000-2018 Triple Point Technology. All rights reserved.
+/*
+  Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
 package test.validate;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -21,7 +22,7 @@ public class HtmlValidator extends AbstractValidator {
   }
 
   @Override
-  public boolean validate() throws IOException {
+  public List<String> validate() throws IOException {
 
     String baseUri =
         RelativePathConstants.PROTOCOL_FILE
@@ -29,16 +30,9 @@ public class HtmlValidator extends AbstractValidator {
             + fileToValidate.getPath();
 
     Document doc = Jsoup.parse(fileToValidate, RelativePathConstants.ENCODING_UTF_8, baseUri);
-    boolean isValidHtml = true;
 
-    if (isQueryInvalid(doc, RelativePathConstants.QUERY_HREF,
-        RelativePathConstants.ATTRIBUTE_HREF)) {
-      isValidHtml = false;
-    }
-
-    if (isQueryInvalid(doc, RelativePathConstants.QUERY_SRC, RelativePathConstants.ATTRIBUTE_SRC)) {
-      isValidHtml = false;
-    }
+    checkQuery(doc, RelativePathConstants.QUERY_HREF, RelativePathConstants.ATTRIBUTE_HREF);
+    checkQuery(doc, RelativePathConstants.QUERY_SRC, RelativePathConstants.ATTRIBUTE_SRC);
 
     Elements columnTags = doc.select("td");
 
@@ -53,15 +47,14 @@ public class HtmlValidator extends AbstractValidator {
 
         File resourceFile = new File(absPath);
         if (!resourceFile.exists() && !resourceFile.getParentFile().exists()) {
-          printMessage("html td", absPath, columnTag.attr("id"));
-          isValidHtml = false;
+          appendErrorMessage("html td", absPath, columnTag.attr("id"));
         }
       }
     }
-    return isValidHtml;
+    return errorMessages;
   }
 
-  private boolean isQueryInvalid(Document doc, String query, String attribute) {
+  private void checkQuery(Document doc, String query, String attribute) {
 
     Elements links = doc.select(query);
 
@@ -75,10 +68,8 @@ public class HtmlValidator extends AbstractValidator {
       File resourceFile = new File(absPath);
 
       if (!resourceFile.exists() && !resourceFile.getParentFile().exists()) {
-        printMessage("Invalid " + attribute + " query. ", absPath, link.attr("id"));
-        return true;
+        appendErrorMessage("Invalid " + attribute + " query. ", absPath, link.attr("id"));
       }
     }
-    return false;
   }
 }

@@ -1,9 +1,11 @@
-/**
- * Copyright 2000-2018 Triple Point Technology. All rights reserved.
+/*
+  Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
 package test.validate;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 import test.constants.RelativePathConstants;
 
 /**
@@ -12,10 +14,11 @@ import test.constants.RelativePathConstants;
 abstract class AbstractValidator implements ValidatorI {
 
   File fileToValidate;
+  List<String> errorMessages = new ArrayList<>();
 
-  void printMessage(String str, String absPath, String attributeId) {
-    System.err.println(
-        "Error: " + str + fileToValidate.getName() + " --> " + absPath + "-->" + attributeId);
+  void appendErrorMessage(String str, String absPath, String attributeId) {
+    errorMessages
+        .add("Error: " + str + fileToValidate.getName() + " --> " + absPath + "-->" + attributeId);
   }
 
   String getAbsolutePath(String line) {

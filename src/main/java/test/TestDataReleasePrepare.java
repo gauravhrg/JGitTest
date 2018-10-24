@@ -45,7 +45,7 @@ public class TestDataReleasePrepare {
   private String majorVersion;
   private String minorVersion;
   private GitHandler gitHandler;
-  private List<File> invalidFiles = new ArrayList<>();
+  private final List<File> invalidFiles = new ArrayList<>();
 
   private TestDataReleasePrepare(String[] args) {
     this.args = args;
@@ -153,10 +153,7 @@ public class TestDataReleasePrepare {
     while (files.hasNext()) {
       File fileToUpdate = files.next();
       File updatedFile = updateFile(fileToUpdate);
-      if (!validateFile(updatedFile)) {
-        invalidFiles.add(updatedFile);
-        System.out.println("Invalid file: " + updatedFile);
-      }
+      validateFile(updatedFile);
     }
   }
 
@@ -167,11 +164,17 @@ public class TestDataReleasePrepare {
     return updateRelativePath.updateFile();
   }
 
-  private boolean validateFile(File fileToValidate) throws IOException {
+  private void validateFile(File fileToValidate) throws IOException {
 
     ValidatorI validator = ValidatorBuilder.getValidator(fileToValidate);
-    return validator.validate();
+    List<String> errorMessages = validator.validate();
 
+    if (!errorMessages.isEmpty()) {
+      System.out.println("Invalid file: " + fileToValidate);
+      for (String errorMessage : errorMessages) {
+        System.out.println(errorMessage);
+      }
+    }
   }
 
   private Iterator<File> getFiles(File iteratorDir, String[] fileTypes) {
