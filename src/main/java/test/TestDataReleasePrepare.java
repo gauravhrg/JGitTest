@@ -142,7 +142,7 @@ public class TestDataReleasePrepare {
       validateFile(updatedFile, deleteInvalidFiles);
 
     }
-//    FileUtils.cleanDirectory(updatesDirectory);
+    FileUtils.cleanDirectory(updatesDirectory);
   }
 
   private File updateFile(File fileToUpdate) throws IOException {
