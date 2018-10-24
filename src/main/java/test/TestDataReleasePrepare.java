@@ -133,9 +133,10 @@ public class TestDataReleasePrepare {
       File updatedFile = updateFile(fileToUpdate);
       boolean deleteInvalidFiles = false;
       validateFile(updatedFile, deleteInvalidFiles);
-      sqlsToCommit.add(updatedFile);
+//      sqlsToCommit.add(updatedFile);
     }
     FileUtils.cleanDirectory(updatesDirectory);
+    sqlsToCommit.add(releaseDirectory);
     sqlsToCommit.add(updatesDirectory);
   }
 
