@@ -1,6 +1,7 @@
-package test;/*
+/*
   Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
+package test;
 
 import static test.RelativePathConstants.DOT;
 
@@ -67,8 +68,11 @@ public class TestDataReleasePrepare {
     majorVersionIndex++;
 
     int minorVersionIndex = version.indexOf(DOT, majorVersionIndex);
-    minorVersion = version.substring(majorVersionIndex, minorVersionIndex);
-
+    if (minorVersionIndex != -1) {
+      minorVersion = version.substring(majorVersionIndex, minorVersionIndex);
+    } else {
+      minorVersion = version.substring(majorVersionIndex);
+    }
     return majorVersion + DOT + minorVersion;
   }
 

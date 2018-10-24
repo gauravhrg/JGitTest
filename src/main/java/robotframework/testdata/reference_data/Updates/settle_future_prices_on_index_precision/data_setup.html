@@ -1,0 +1,4683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+html {
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: white;
+  color: black;
+}
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+  margin: 1em 0em;
+  border: 1px solid black;
+}
+th, td {
+  border: 1px solid black;
+  padding: 0.1em 0.2em;
+  height: 1.5em;
+  width: 12em;
+}
+td.colspan4, th.colspan4 {
+    width: 48em;
+}
+td.colspan3, th.colspan3 {
+    width: 36em;
+}
+td.colspan2, th.colspan2 {
+    width: 24em;
+}
+th {
+  background-color: rgb(192, 192, 192);
+  color: black;
+  height: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+td.name {
+  background-color: rgb(240, 240, 240);
+  letter-spacing: 0.1em;
+}
+td.name, th.name {
+  width: 10em;
+}
+</style>
+<title>Test Data</title>
+</head>
+<body>
+<h1>Test Data</h1>
+<table border="1" id="setting">
+<tr>
+<th class="name" colspan="5">Settings</th>
+</tr>
+<tr>
+<td class="name">Default Tags</td>
+<td>spartans</td>
+<td>gen-528 B</td>
+<td>trunk</td>
+</tr>
+<tr>
+				<td class="name">Documentation</td>
+				<td class="colspan4" colspan="4"><code>This test case is to create Test Data for Acceptance > Valuation > Settle_future_prices_on_index_precision > Settle Future Prices on Index Precision.</td>
+			</tr>
+<tr>
+<td class="name">Resource</td>
+<td>../../../../resources/global_resource.txt</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td class="name"></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</table>
+	<table border="1" id="testcase">
+		<tr>
+			<th class="name" colspan="1">Test Case</th>
+			<th class="name" colspan="1">Contract Name</th>
+			<th class="name" colspan="1">Base Quote</th>
+			<th class="name" colspan="1">Risk Period</th>
+			<th class="name" colspan="1">Underlying Start</th>
+			<th class="name" colspan="1">Underlying End</th>
+			<th class="name" colspan="1">Future Termination</th>
+			<th class="name" colspan="1">Futures Settlement Rule</th>
+			<th class="name" colspan="1">Market Data Currency</th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+			<th class="name" colspan="1"></th>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Create a Power Location">Create
+					a Power Location</a></td>
+			<td>Create Power Location</td>
+			<td>GEN 528 B Location</td>
+			<td>Peak Region=GERMAN</td>
+			<td>Trading Area=Germany (P)</td>
+			<td>Delivery Area=Germany (P)</td>
+			<td>Type=Delivery Point (P)</td>
+			<td>Trading Market =DE POWER</td>
+			<td>Time Zone=CET</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Create a Power Location">Create
+					a Gas Location</a></td>
+			<td>Create Gas Location</td>
+			<td>GEN 528 G Location</td>
+			<td>Peak Region=EU GAS</td>
+			<td>Commodity Type=Natural Gas</td>
+			<td>Type=Market</td>
+			<td>Trading Market =Gas</td>
+			<td>Time Zone=CET</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Create a Market Source">Create
+					a Market Source</a></td>
+			<td>Create Sources</td>
+			<td>GEN 528B AAFP True</td>
+			<td>Name=GEN 528B Arithmetic Ind True</td>
+			<td>Published=Daily</td>
+			<td>Saturday Rule Ind=Include</td>
+			<td>Sunday Rule Ind=Include</td>
+			<td>Holiday Rule Ind=Include</td>
+			<td>Monday Holiday Rule Ind=Include</td>
+			<td>Arithmetic Avg Ind=True</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Create a Forward Price Curve">Create
+					a Forward Price Curve</a></td>
+			<td>[Template]</td>
+			<td>Create Forward Price Curve</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Curve Style=Other</td>
+			<td>Commodity=Gas</td>
+			<td>Location=TTF GAS Hourly</td>
+			<td>Scalar=RWE</td>
+			<td>UOM=MWh-G</td>
+			<td>Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>Curve Style=Block</td>
+			<td>Commodity=Electricity</td>
+			<td>Location=GEN 528 B Location</td>
+			<td>Scalar=RWE</td>
+			<td>UOM=MWh</td>
+			<td>Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Create a Pricing Quote">Create
+					a Pricing Quote</a></td>
+			<td>[Template]</td>
+			<td>Create Pricing Quote</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote</td>
+			<td>Fwd Price Curve=GEN 528 B Gas Fwd Price</td>
+			<td>Commodity=Gas</td>
+			<td>UOM=MWh-G</td>
+			<td>Currency=EUR</td>
+			<td>Location=TTF GAS Hourly</td>
+			<td>Type=Commodity</td>
+			<td>Source=Gas Daily</td>
+			<td>Service Level=Firm (G)</td>
+			<td>Delivery Schedule=Daily</td>
+			<td>Periodicity=per Day</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh-G</td>
+			<td>Exchange Traded=Future Contract</td>
+			<td>Precision=6</td>
+		</tr>
+		<!--GEN 528 B Gas Quote2, quote added to check cases with
+location with valuation periodicity as Daily(Default)
+quote-location-trading market-trading periodicity-valuation periodicity  -->
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Fwd Price Curve=GEN 528 B Gas Fwd Price</td>
+			<td>Commodity=Gas</td>
+			<td>UOM=MWh-G</td>
+			<td>Currency=EUR</td>
+			<td>Location=GEN 528 G Location</td>
+			<td>Type=Commodity</td>
+			<td>Source=Gas Daily</td>
+			<td>Service Level=Firm (G)</td>
+			<td>Delivery Schedule=Daily</td>
+			<td>Periodicity=per Day</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh-G</td>
+			<td>Exchange Traded=Future Contract</td>
+			<td>Precision=6</td>
+		</tr>
+		<!--GEN 528 B Gas Quote3, quote added with new market source-->
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Fwd Price Curve=GEN 528 B Gas Fwd Price</td>
+			<td>Commodity=Gas</td>
+			<td>UOM=MWh-G</td>
+			<td>Currency=EUR</td>
+			<td>Location=TTF GAS Hourly</td>
+			<td>Type=Commodity</td>
+			<td>Source=GEN 528B AAFP True</td>
+			<td>Service Level=Firm (G)</td>
+			<td>Delivery Schedule=Daily</td>
+			<td>Periodicity=per Day</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh-G</td>
+			<td>Exchange Traded=Future Contract</td>
+			<td>Precision=6</td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Quote</td>
+			<td>Fwd Price Curve=GEN 528 B Power Fwd Price</td>
+			<td>Commodity=Electricity</td>
+			<td>UOM=MWh</td>
+			<td>Currency=EUR</td>
+			<td>Location=GEN 528 B Location</td>
+			<td>Type=Commodity</td>
+			<td>Source=Gas Daily</td>
+			<td>Service Level=Firm Power</td>
+			<td>Delivery Schedule=EU BL</td>
+			<td>Periodicity=per Hour</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh</td>
+			<td>Exchange Traded=Future Contract</td>
+			<td>Precision=6</td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Fwd Price Curve=GEN 528 B Power Fwd Price</td>
+			<td>Commodity=Electricity</td>
+			<td>UOM=MWh</td>
+			<td>Currency=EUR</td>
+			<td>Location=GEN 528 B Location</td>
+			<td>Type=Commodity</td>
+			<td>Source=GEN 528B AAFP True</td>
+			<td>Service Level=Firm Power</td>
+			<td>Delivery Schedule=EU BL</td>
+			<td>Periodicity=per Hour</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh</td>
+			<td>Exchange Traded=Future Contract</td>
+			<td>Precision=6</td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Fwd Price Curve=GEN 528 B Gas Fwd Price
+			<td>Commodity=Gas</td>
+			<td>UOM=MWh-G</td>
+			<td>Currency=EUR</td>
+			<td>Location=TTF GAS Hourly</td>
+			<td>Type=Commodity</td>
+			<td>Source=GEN 528B AAFP True</td>
+			<td>Service Level=Firm (G)</td>
+			<td>Delivery Schedule=Daily</td>
+			<td>Periodicity=per Day</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh-G</td>
+			<td>Exchange Traded=No</td>
+			<td>Precision=5</td>
+
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Fwd Price Curve=GEN 528 B Power Fwd Price</td>
+			<td>Commodity=Electricity</td>
+			<td>UOM=MWh</td>
+			<td>Currency=EUR</td>
+			<td>Location=GEN 528 B Location</td>
+			<td>Type=Commodity</td>
+			<td>Source=GEN 528B AAFP True</td>
+			<td>Service Level=Firm Power</td>
+			<td>Delivery Schedule=EU BL</td>
+			<td>Periodicity=per Hour</td>
+			<td>Lot Quantity=1</td>
+			<td>Lot Quantity UOM=MWh</td>
+			<td>Exchange Traded=No</td>
+			<td>Precision=5</td>
+		</tr>
+		<tr>
+			</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Push Power Curve Prices">Push
+					Power Curve Prices</a></td>
+			<td>[Template]</td>
+			<td>Save Block Curve Price</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080421000000</td>
+			<td>Price=4.9079749</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080421000000</td>
+			<td>Price=4.9079749</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080422000000</td>
+			<td>Price=4.9813877</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080422000000</td>
+			<td>Price=4.9813877</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080423000000</td>
+			<td>Price=5.0548005</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080423000000</td>
+			<td>Price=5.0548005</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080424000000</td>
+			<td>Price=5.1282133</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080424000000</td>
+			<td>Price=5.1282133</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080425000000</td>
+			<td>Price=5.2016261</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080425000000</td>
+			<td>Price=5.2016261</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080426000000</td>
+			<td>Price=5.2750389</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080426000000</td>
+			<td>Price=5.2750389</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080427000000</td>
+			<td>Price=5.3484517</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080427000000</td>
+			<td>Price=5.3484517</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080428000000</td>
+			<td>Price=5.4218645</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080428000000</td>
+			<td>Price=5.4218645</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080429000000</td>
+			<td>Price=5.4952773</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080429000000</td>
+			<td>Price=5.4952773</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080430000000</td>
+			<td>Price=5.5686901</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080430000000</td>
+			<td>Price=5.5686901</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080501000000</td>
+			<td>Price=5.6421029</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080501000000</td>
+			<td>Price=5.6421029</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080502000000</td>
+			<td>Price=5.7155157</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080502000000</td>
+			<td>Price=5.7155157</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080503000000</td>
+			<td>Price=5.7889285</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080503000000</td>
+			<td>Price=5.7889285</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080504000000</td>
+			<td>Price=5.8623413</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080504000000</td>
+			<td>Price=5.8623413</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080505000000</td>
+			<td>Price=5.9357541</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080505000000</td>
+			<td>Price=5.9357541</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080506000000</td>
+			<td>Price=6.0091669</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080506000000</td>
+			<td>Price=6.0091669</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080507000000</td>
+			<td>Price=6.0825797</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080507000000</td>
+			<td>Price=6.0825797</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080508000000</td>
+			<td>Price=6.1559925</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080508000000</td>
+			<td>Price=6.1559925</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080509000000</td>
+			<td>Price=6.2294053</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080509000000</td>
+			<td>Price=6.2294053</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080510000000</td>
+			<td>Price=6.3028181</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080510000000</td>
+			<td>Price=6.3028181</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080511000000</td>
+			<td>Price=6.3762309</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080511000000</td>
+			<td>Price=6.3762309</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080512000000</td>
+			<td>Price=6.4496437</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080512000000</td>
+			<td>Price=6.4496437</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080513000000</td>
+			<td>Price=6.5230565</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080513000000</td>
+			<td>Price=6.5230565</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080514000000</td>
+			<td>Price=6.5964693</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080514000000</td>
+			<td>Price=6.5964693</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080515000000</td>
+			<td>Price=6.6698821</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080515000000</td>
+			<td>Price=6.6698821</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080516000000</td>
+			<td>Price=6.7432949</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080516000000</td>
+			<td>Price=6.7432949</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080517000000</td>
+			<td>Price=6.8167077</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080517000000</td>
+			<td>Price=6.8167077</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080518000000</td>
+			<td>Price=6.8901205</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080518000000</td>
+			<td>Price=6.8901205</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080519000000</td>
+			<td>Price=6.9635333</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080519000000</td>
+			<td>Price=6.9635333</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080520000000</td>
+			<td>Price=7.0369461</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080520000000</td>
+			<td>Price=7.0369461</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080521000000</td>
+			<td>Price=7.1103589</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080521000000</td>
+			<td>Price=7.1103589</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080522000000</td>
+			<td>Price=7.1837717</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080522000000</td>
+			<td>Price=7.1837717</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080523000000</td>
+			<td>Price=7.2571845</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080523000000</td>
+			<td>Price=7.2571845</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080524000000</td>
+			<td>Price=7.3305973</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080524000000</td>
+			<td>Price=7.3305973</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080525000000</td>
+			<td>Price=7.4040101</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080525000000</td>
+			<td>Price=7.4040101</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080526000000</td>
+			<td>Price=7.4774229</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080526000000</td>
+			<td>Price=7.4774229</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080527000000</td>
+			<td>Price=7.5508357</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080527000000</td>
+			<td>Price=7.5508357</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080528000000</td>
+			<td>Price=7.6242485</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080528000000</td>
+			<td>Price=7.6242485</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080529000000</td>
+			<td>Price=7.6976613</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080529000000</td>
+			<td>Price=7.6976613</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080530000000</td>
+			<td>Price=7.7710741</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080530000000</td>
+			<td>Price=7.7710741</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20080531000000</td>
+			<td>Price=7.8444869</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20080531000000</td>
+			<td>Price=7.8444869</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081001000000</td>
+			<td>Price=5.6421029</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081001000000</td>
+			<td>Price=5.6421029</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081002000000</td>
+			<td>Price=5.7155157</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081002000000</td>
+			<td>Price=5.7155157</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081003000000</td>
+			<td>Price=5.7889285</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081003000000</td>
+			<td>Price=5.7889285</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081004000000</td>
+			<td>Price=5.8623413</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081004000000</td>
+			<td>Price=5.8623413</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081005000000</td>
+			<td>Price=5.9357541</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081005000000</td>
+			<td>Price=5.9357541</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081006000000</td>
+			<td>Price=6.0091669</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081006000000</td>
+			<td>Price=6.0091669</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081007000000</td>
+			<td>Price=6.0825797</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081007000000</td>
+			<td>Price=6.0825797</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081008000000</td>
+			<td>Price=6.1559925</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081008000000</td>
+			<td>Price=6.1559925</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081009000000</td>
+			<td>Price=6.2294053</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081009000000</td>
+			<td>Price=6.2294053</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081010000000</td>
+			<td>Price=6.3028181</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081010000000</td>
+			<td>Price=6.3028181</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081011000000</td>
+			<td>Price=6.3762309</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081011000000</td>
+			<td>Price=6.3762309</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081012000000</td>
+			<td>Price=6.4496437</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081012000000</td>
+			<td>Price=6.4496437</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081013000000</td>
+			<td>Price=6.5230565</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081013000000</td>
+			<td>Price=6.5230565</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081014000000</td>
+			<td>Price=6.5964693</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081014000000</td>
+			<td>Price=6.5964693</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081015000000</td>
+			<td>Price=6.6698821</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081015000000</td>
+			<td>Price=6.6698821</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081016000000</td>
+			<td>Price=6.7432949</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081016000000</td>
+			<td>Price=6.7432949</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081017000000</td>
+			<td>Price=6.8167077</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081017000000</td>
+			<td>Price=6.8167077</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081018000000</td>
+			<td>Price=6.8901205</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081018000000</td>
+			<td>Price=6.8901205</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081019000000</td>
+			<td>Price=6.9635333</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081019000000</td>
+			<td>Price=6.9635333</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081020000000</td>
+			<td>Price=7.0369461</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081020000000</td>
+			<td>Price=7.0369461</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081021000000</td>
+			<td>Price=7.1103589</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081021000000</td>
+			<td>Price=7.1103589</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081022000000</td>
+			<td>Price=7.1837717</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081022000000</td>
+			<td>Price=7.1837717</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081023000000</td>
+			<td>Price=7.2571845</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081023000000</td>
+			<td>Price=7.2571845</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081024000000</td>
+			<td>Price=7.3305973</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081024000000</td>
+			<td>Price=7.3305973</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081025000000</td>
+			<td>Price=7.4040101</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081025000000</td>
+			<td>Price=7.4040101</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081026000000</td>
+			<td>Price=7.4774229</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081026000000</td>
+			<td>Price=7.4774229</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081027000000</td>
+			<td>Price=7.5508357</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081027000000</td>
+			<td>Price=7.5508357</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081028000000</td>
+			<td>Price=7.6242485</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081028000000</td>
+			<td>Price=7.6242485</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081029000000</td>
+			<td>Price=7.6976613</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081029000000</td>
+			<td>Price=7.6976613</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081030000000</td>
+			<td>Price=7.7710741</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081030000000</td>
+			<td>Price=7.7710741</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Fwd Price</td>
+			<td>1</td>
+			<td>Type=Daily</td>
+			<td>Date=20081031000000</td>
+			<td>Price=7.8444869</td>
+			<td>Block=EPT PEAK</td>
+			<td>Type=Daily</td>
+			<td>Date=20081031000000</td>
+			<td>Price=7.8444869</td>
+			<td>Block=EPT OFF PEAK</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+
+
+		<tr>
+			<td class="name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Push Gas Curve Price">Push
+					Gas Curve Price</a></td>
+			<td>[Template]</td>
+			<td>Save Daily Forward Price</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080421000000</td>
+			<td>Price=11.1315797</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080422000000</td>
+			<td>Price=11.1397027</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080423000000</td>
+			<td>Price=11.1478257</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080424000000</td>
+			<td>Price=11.1559487</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080425000000</td>
+			<td>Price=11.1640717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080426000000</td>
+			<td>Price=11.1721947</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080427000000</td>
+			<td>Price=11.1803177</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080428000000</td>
+			<td>Price=11.1884407</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080429000000</td>
+			<td>Price=11.1965637</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080430000000</td>
+			<td>Price=11.2046867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080501000000</td>
+			<td>Price=12.1530797</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080502000000</td>
+			<td>Price=12.1827027</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080503000000</td>
+			<td>Price=12.2123257</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080504000000</td>
+			<td>Price=12.2419487</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080505000000</td>
+			<td>Price=12.2715717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080506000000</td>
+			<td>Price=12.3011947</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080507000000</td>
+			<td>Price=12.3308177</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080508000000</td>
+			<td>Price=12.3604407</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080509000000</td>
+			<td>Price=12.3900637</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080510000000</td>
+			<td>Price=12.4196867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080511000000</td>
+			<td>Price=12.4493097</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080512000000</td>
+			<td>Price=12.4789327</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080513000000</td>
+			<td>Price=12.5085557</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080514000000</td>
+			<td>Price=12.5381787</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080515000000</td>
+			<td>Price=12.5678017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080516000000</td>
+			<td>Price=12.5974247</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080517000000</td>
+			<td>Price=12.6270477</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080518000000</td>
+			<td>Price=12.6566707</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080519000000</td>
+			<td>Price=12.6862937</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080520000000</td>
+			<td>Price=12.7159167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080521000000</td>
+			<td>Price=12.7455397</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080522000000</td>
+			<td>Price=12.7751627</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080523000000</td>
+			<td>Price=12.8047857</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080524000000</td>
+			<td>Price=12.8344087</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080525000000</td>
+			<td>Price=12.8640317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080526000000</td>
+			<td>Price=12.8936547</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080527000000</td>
+			<td>Price=12.9232777</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080528000000</td>
+			<td>Price=12.9529007</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080529000000</td>
+			<td>Price=12.9825237</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080530000000</td>
+			<td>Price=13.0121467</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20080531000000</td>
+			<td>Price=13.0417697</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081001000000</td>
+			<td>Price=12.1530797</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081002000000</td>
+			<td>Price=12.1827027</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081003000000</td>
+			<td>Price=12.2123257</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081004000000</td>
+			<td>Price=12.2419487</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081005000000</td>
+			<td>Price=12.2715717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081006000000</td>
+			<td>Price=12.3011947</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081007000000</td>
+			<td>Price=12.3308177</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081008000000</td>
+			<td>Price=12.3604407</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081009000000</td>
+			<td>Price=12.3900637</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081010000000</td>
+			<td>Price=12.4196867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081011000000</td>
+			<td>Price=12.4493097</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081012000000</td>
+			<td>Price=12.4789327</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081013000000</td>
+			<td>Price=12.5085557</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081014000000</td>
+			<td>Price=12.5381787</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081015000000</td>
+			<td>Price=12.5678017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081016000000</td>
+			<td>Price=12.5974247</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081017000000</td>
+			<td>Price=12.6270477</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081018000000</td>
+			<td>Price=12.6566707</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081019000000</td>
+			<td>Price=12.6862937</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081020000000</td>
+			<td>Price=12.7159167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081021000000</td>
+			<td>Price=12.7455397</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081022000000</td>
+			<td>Price=12.7751627</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081023000000</td>
+			<td>Price=12.8047857</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081024000000</td>
+			<td>Price=12.8344087</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081025000000</td>
+			<td>Price=12.8640317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081026000000</td>
+			<td>Price=12.8936547</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081027000000</td>
+			<td>Price=12.9232777</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081028000000</td>
+			<td>Price=12.9529007</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081029000000</td>
+			<td>Price=12.9825237</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081030000000</td>
+			<td>Price=13.0121467</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>1</td>
+			<td>GEN 528 B Gas Fwd Price</td>
+			<td>Date=20081031000000</td>
+			<td>Price=13.0417697</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"><a name="test_Push Quote Prices">Push Quote
+					Prices</a></td>
+			<td>[Template]</td>
+			<td>Save Quote Price</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Quote</td>
+			<td>Date=20080401000000</td>
+			<td>Price=3.7202766</td>
+			<td>Date=20080402000000</td>
+			<td>Price=3.7660076</td>
+			<td>Date=20080403000000</td>
+			<td>Price=3.8117386</td>
+			<td>Date=20080404000000</td>
+			<td>Price=3.8574696</td>
+			<td>Date=20080405000000</td>
+			<td>Price=3.9032006</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Quote</td>
+			<td>Date=20080406000000</td>
+			<td>Price=3.9489316</td>
+			<td>Date=20080407000000</td>
+			<td>Price=3.9946626</td>
+			<td>Date=20080408000000</td>
+			<td>Price=4.0403936</td>
+			<td>Date=20080409000000</td>
+			<td>Price=4.0861246</td>
+			<td>Date=20080410000000</td>
+			<td>Price=4.1318556</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Quote</td>
+			<td>Date=20080411000000</td>
+			<td>Price=4.1775866</td>
+			<td>Date=20080412000000</td>
+			<td>Price=4.2233176</td>
+			<td>Date=20080413000000</td>
+			<td>Price=4.2690486</td>
+			<td>Date=20080414000000</td>
+			<td>Price=4.3147796</td>
+			<td>Date=20080415000000</td>
+			<td>Price=4.3605106</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Power Quote</td>
+			<td>Date=20080416000000</td>
+			<td>Price=4.4062416</td>
+			<td>Date=20080417000000</td>
+			<td>Price=4.4519726</td>
+			<td>Date=20080418000000</td>
+			<td>Price=4.4977036</td>
+			<td>Date=20080419000000</td>
+			<td>Price=4.5434346</td>
+			<td>Date=20080420000000</td>
+			<td>Price=4.5891656</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080301000000</td>
+			<td>Price=2.1255797</td>
+			<td>Date=20080302000000</td>
+			<td>Price=2.1277027</td>
+			<td>Date=20080303000000</td>
+			<td>Price=2.1298257</td>
+			<td>Date=20080304000000</td>
+			<td>Price=2.1319487</td>
+			<td>Date=20080305000000</td>
+			<td>Price=2.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080306000000</td>
+			<td>Price=2.1361947</td>
+			<td>Date=20080307000000</td>
+			<td>Price=2.1383177</td>
+			<td>Date=20080308000000</td>
+			<td>Price=2.1404407</td>
+			<td>Date=20080309000000</td>
+			<td>Price=2.1425637</td>
+			<td>Date=20080310000000</td>
+			<td>Price=2.1446867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080311000000</td>
+			<td>Price=2.1468097</td>
+			<td>Date=20080312000000</td>
+			<td>Price=2.1489327</td>
+			<td>Date=20080313000000</td>
+			<td>Price=2.1510557</td>
+			<td>Date=20080314000000</td>
+			<td>Price=2.1531787</td>
+			<td>Date=20080315000000</td>
+			<td>Price=2.1553017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080316000000</td>
+			<td>Price=2.1574247</td>
+			<td>Date=20080317000000</td>
+			<td>Price=2.1595477</td>
+			<td>Date=20080318000000</td>
+			<td>Price=2.1616707</td>
+			<td>Date=20080319000000</td>
+			<td>Price=2.1637937</td>
+			<td>Date=20080320000000</td>
+			<td>Price=2.1659167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080321000000</td>
+			<td>Price=2.1680397</td>
+			<td>Date=20080322000000</td>
+			<td>Price=2.1701627</td>
+			<td>Date=20080323000000</td>
+			<td>Price=2.1722857</td>
+			<td>Date=20080324000000</td>
+			<td>Price=2.1744087</td>
+			<td>Date=20080325000000</td>
+			<td>Price=2.1765317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20080326000000</td>
+			<td>Price=2.1786547</td>
+			<td>Date=20080327000000</td>
+			<td>Price=2.1807777</td>
+			<td>Date=20080328000000</td>
+			<td>Price=2.1829007</td>
+			<td>Date=20080329000000</td>
+			<td>Price=2.1850237</td>
+			<td>Date=20080330000000</td>
+			<td>Price=2.1871467</td>
+			<td>Date=20080331000000</td>
+			<td>Price=2.1892697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071001000000</td>
+			<td>Price=4.1257897</td>
+			<td>Date=20071002000000</td>
+			<td>Price=4.1299027</td>
+			<td>Date=20071003000000</td>
+			<td>Price=4.1212257</td>
+			<td>Date=20071004000000</td>
+			<td>Price=4.1390487</td>
+			<td>Date=20071005000000</td>
+			<td>Price=4.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071006000000</td>
+			<td>Price=4.1365947</td>
+			<td>Date=20071007000000</td>
+			<td>Price=4.1334177</td>
+			<td>Date=20071008000000</td>
+			<td>Price=4.1467407</td>
+			<td>Date=20071009000000</td>
+			<td>Price=4.1499637</td>
+			<td>Date=20071010000000</td>
+			<td>Price=4.1490867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071011000000</td>
+			<td>Price=4.1412097</td>
+			<td>Date=20071012000000</td>
+			<td>Price=4.1456327</td>
+			<td>Date=20071013000000</td>
+			<td>Price=4.1545557</td>
+			<td>Date=20071014000000</td>
+			<td>Price=4.1589787</td>
+			<td>Date=20071015000000</td>
+			<td>Price=4.1532017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071016000000</td>
+			<td>Price=4.1533247</td>
+			<td>Date=20071017000000</td>
+			<td>Price=4.1523477</td>
+			<td>Date=20071018000000</td>
+			<td>Price=4.1657707</td>
+			<td>Date=20071019000000</td>
+			<td>Price=4.1662937</td>
+			<td>Date=20071020000000</td>
+			<td>Price=4.1699167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071021000000</td>
+			<td>Price=4.1631397</td>
+			<td>Date=20071022000000</td>
+			<td>Price=4.1735627</td>
+			<td>Date=20071023000000</td>
+			<td>Price=4.1739857</td>
+			<td>Date=20071024000000</td>
+			<td>Price=4.1743087</td>
+			<td>Date=20071025000000</td>
+			<td>Price=4.1783317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B P Arthmtc True</td>
+			<td>Date=20071026000000</td>
+			<td>Price=4.1789547</td>
+			<td>Date=20071027000000</td>
+			<td>Price=4.1888777</td>
+			<td>Date=20071028000000</td>
+			<td>Price=4.1870007</td>
+			<td>Date=20071029000000</td>
+			<td>Price=4.1817237</td>
+			<td>Date=20071030000000</td>
+			<td>Price=4.1815467</td>
+			<td>Date=20071031000000</td>
+			<td>Price=4.1811697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote</td>
+			<td>Date=20080401000000</td>
+			<td>Price=6.7202766</td>
+			<td>Date=20080402000000</td>
+			<td>Price=6.7660076</td>
+			<td>Date=20080403000000</td>
+			<td>Price=6.8117386</td>
+			<td>Date=20080404000000</td>
+			<td>Price=6.8574696</td>
+			<td>Date=20080405000000</td>
+			<td>Price=6.9032006</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote</td>
+			<td>Date=20080406000000</td>
+			<td>Price=6.9489316</td>
+			<td>Date=20080407000000</td>
+			<td>Price=6.9946626</td>
+			<td>Date=20080408000000</td>
+			<td>Price=7.0403936</td>
+			<td>Date=20080409000000</td>
+			<td>Price=7.0861246</td>
+			<td>Date=20080410000000</td>
+			<td>Price=7.1318556</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote</td>
+			<td>Date=20080411000000</td>
+			<td>Price=7.1775866</td>
+			<td>Date=20080412000000</td>
+			<td>Price=7.2233176</td>
+			<td>Date=20080413000000</td>
+			<td>Price=7.2690486</td>
+			<td>Date=20080414000000</td>
+			<td>Price=7.3147796</td>
+			<td>Date=20080415000000</td>
+			<td>Price=7.3605106</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote</td>
+			<td>Date=20080416000000</td>
+			<td>Price=7.4062416</td>
+			<td>Date=20080417000000</td>
+			<td>Price=7.4519726</td>
+			<td>Date=20080418000000</td>
+			<td>Price=7.4977036</td>
+			<td>Date=20080419000000</td>
+			<td>Price=7.5434346</td>
+			<td>Date=20080420000000</td>
+			<td>Price=7.5891656</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080301000000</td>
+			<td>Price=5.1255797</td>
+			<td>Date=20080302000000</td>
+			<td>Price=5.1277027</td>
+			<td>Date=20080303000000</td>
+			<td>Price=5.1298257</td>
+			<td>Date=20080304000000</td>
+			<td>Price=5.1319487</td>
+			<td>Date=20080305000000</td>
+			<td>Price=5.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080306000000</td>
+			<td>Price=5.1361947</td>
+			<td>Date=20080307000000</td>
+			<td>Price=5.1383177</td>
+			<td>Date=20080308000000</td>
+			<td>Price=5.1404407</td>
+			<td>Date=20080309000000</td>
+			<td>Price=5.1425637</td>
+			<td>Date=20080310000000</td>
+			<td>Price=5.1446867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080311000000</td>
+			<td>Price=5.1468097</td>
+			<td>Date=20080312000000</td>
+			<td>Price=5.1489327</td>
+			<td>Date=20080313000000</td>
+			<td>Price=5.1510557</td>
+			<td>Date=20080314000000</td>
+			<td>Price=5.1531787</td>
+			<td>Date=20080315000000</td>
+			<td>Price=5.1553017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080316000000</td>
+			<td>Price=5.1574247</td>
+			<td>Date=20080317000000</td>
+			<td>Price=5.1595477</td>
+			<td>Date=20080318000000</td>
+			<td>Price=5.1616707</td>
+			<td>Date=20080319000000</td>
+			<td>Price=5.1637937</td>
+			<td>Date=20080320000000</td>
+			<td>Price=5.1659167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080321000000</td>
+			<td>Price=5.1680397</td>
+			<td>Date=20080322000000</td>
+			<td>Price=5.1701627</td>
+			<td>Date=20080323000000</td>
+			<td>Price=5.1722857</td>
+			<td>Date=20080324000000</td>
+			<td>Price=5.1744087</td>
+			<td>Date=20080325000000</td>
+			<td>Price=5.1765317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080326000000</td>
+			<td>Price=5.1786547</td>
+			<td>Date=20080327000000</td>
+			<td>Price=5.1807777</td>
+			<td>Date=20080328000000</td>
+			<td>Price=5.1829007</td>
+			<td>Date=20080329000000</td>
+			<td>Price=5.1850237</td>
+			<td>Date=20080330000000</td>
+			<td>Price=5.1871467</td>
+			<td>Date=20080331000000</td>
+			<td>Price=5.1892697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080401000000</td>
+			<td>Price=6.7202766</td>
+			<td>Date=20080402000000</td>
+			<td>Price=6.7660076</td>
+			<td>Date=20080403000000</td>
+			<td>Price=6.8117386</td>
+			<td>Date=20080404000000</td>
+			<td>Price=6.8574696</td>
+			<td>Date=20080405000000</td>
+			<td>Price=6.9032006</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080406000000</td>
+			<td>Price=6.9489316</td>
+			<td>Date=20080407000000</td>
+			<td>Price=6.9946626</td>
+			<td>Date=20080408000000</td>
+			<td>Price=7.0403936</td>
+			<td>Date=20080409000000</td>
+			<td>Price=7.0861246</td>
+			<td>Date=20080410000000</td>
+			<td>Price=7.1318556</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080411000000</td>
+			<td>Price=7.1775866</td>
+			<td>Date=20080412000000</td>
+			<td>Price=7.2233176</td>
+			<td>Date=20080413000000</td>
+			<td>Price=7.2690486</td>
+			<td>Date=20080414000000</td>
+			<td>Price=7.3147796</td>
+			<td>Date=20080415000000</td>
+			<td>Price=7.3605106</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528 B Gas Quote2</td>
+			<td>Date=20080416000000</td>
+			<td>Price=7.4062416</td>
+			<td>Date=20080417000000</td>
+			<td>Price=7.4519726</td>
+			<td>Date=20080418000000</td>
+			<td>Price=7.4977036</td>
+			<td>Date=20080419000000</td>
+			<td>Price=7.5434346</td>
+			<td>Date=20080420000000</td>
+			<td>Price=7.5891656</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080301000000</td>
+			<td>Price=5.1255797</td>
+			<td>Date=20080302000000</td>
+			<td>Price=5.1277027</td>
+			<td>Date=20080303000000</td>
+			<td>Price=5.1298257</td>
+			<td>Date=20080304000000</td>
+			<td>Price=5.1319487</td>
+			<td>Date=20080305000000</td>
+			<td>Price=5.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080306000000</td>
+			<td>Price=5.1361947</td>
+			<td>Date=20080307000000</td>
+			<td>Price=5.1383177</td>
+			<td>Date=20080308000000</td>
+			<td>Price=5.1404407</td>
+			<td>Date=20080309000000</td>
+			<td>Price=5.1425637</td>
+			<td>Date=20080310000000</td>
+			<td>Price=5.1446867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080311000000</td>
+			<td>Price=5.1468097</td>
+			<td>Date=20080312000000</td>
+			<td>Price=5.1489327</td>
+			<td>Date=20080313000000</td>
+			<td>Price=5.1510557</td>
+			<td>Date=20080314000000</td>
+			<td>Price=5.1531787</td>
+			<td>Date=20080315000000</td>
+			<td>Price=5.1553017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080316000000</td>
+			<td>Price=5.1574247</td>
+			<td>Date=20080317000000</td>
+			<td>Price=5.1595477</td>
+			<td>Date=20080318000000</td>
+			<td>Price=5.1616707</td>
+			<td>Date=20080319000000</td>
+			<td>Price=5.1637937</td>
+			<td>Date=20080320000000</td>
+			<td>Price=5.1659167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080321000000</td>
+			<td>Price=5.1680397</td>
+			<td>Date=20080322000000</td>
+			<td>Price=5.1701627</td>
+			<td>Date=20080323000000</td>
+			<td>Price=5.1722857</td>
+			<td>Date=20080324000000</td>
+			<td>Price=5.1744087</td>
+			<td>Date=20080325000000</td>
+			<td>Price=5.1765317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20080326000000</td>
+			<td>Price=5.1786547</td>
+			<td>Date=20080327000000</td>
+			<td>Price=5.1807777</td>
+			<td>Date=20080328000000</td>
+			<td>Price=5.1829007</td>
+			<td>Date=20080329000000</td>
+			<td>Price=5.1850237</td>
+			<td>Date=20080330000000</td>
+			<td>Price=5.1871467</td>
+			<td>Date=20080331000000</td>
+			<td>Price=5.1892697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071001000000</td>
+			<td>Price=3.1257897</td>
+			<td>Date=20071002000000</td>
+			<td>Price=3.1299027</td>
+			<td>Date=20071003000000</td>
+			<td>Price=3.1212257</td>
+			<td>Date=20071004000000</td>
+			<td>Price=3.1390487</td>
+			<td>Date=20071005000000</td>
+			<td>Price=3.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071006000000</td>
+			<td>Price=3.1365947</td>
+			<td>Date=20071007000000</td>
+			<td>Price=3.1334177</td>
+			<td>Date=20071008000000</td>
+			<td>Price=3.1467407</td>
+			<td>Date=20071009000000</td>
+			<td>Price=3.1499637</td>
+			<td>Date=20071010000000</td>
+			<td>Price=3.1490867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071011000000</td>
+			<td>Price=3.1412097</td>
+			<td>Date=20071012000000</td>
+			<td>Price=3.1456327</td>
+			<td>Date=20071013000000</td>
+			<td>Price=3.1545557</td>
+			<td>Date=20071014000000</td>
+			<td>Price=3.1589787</td>
+			<td>Date=20071015000000</td>
+			<td>Price=3.1532017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071016000000</td>
+			<td>Price=3.1533247</td>
+			<td>Date=20071017000000</td>
+			<td>Price=3.1523477</td>
+			<td>Date=20071018000000</td>
+			<td>Price=3.1657707</td>
+			<td>Date=20071019000000</td>
+			<td>Price=3.1662937</td>
+			<td>Date=20071020000000</td>
+			<td>Price=3.1699167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071021000000</td>
+			<td>Price=3.1631397</td>
+			<td>Date=20071022000000</td>
+			<td>Price=3.1735627</td>
+			<td>Date=20071023000000</td>
+			<td>Price=3.1739857</td>
+			<td>Date=20071024000000</td>
+			<td>Price=3.1743087</td>
+			<td>Date=20071025000000</td>
+			<td>Price=3.1783317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528B G Arthmtc True</td>
+			<td>Date=20071026000000</td>
+			<td>Price=3.1789547</td>
+			<td>Date=20071027000000</td>
+			<td>Price=3.1888777</td>
+			<td>Date=20071028000000</td>
+			<td>Price=3.1870007</td>
+			<td>Date=20071029000000</td>
+			<td>Price=3.1817237</td>
+			<td>Date=20071030000000</td>
+			<td>Price=3.1815467</td>
+			<td>Date=20071031000000</td>
+			<td>Price=3.1811697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080301000000</td>
+			<td>Price=5.1255797</td>
+			<td>Date=20080302000000</td>
+			<td>Price=5.1277027</td>
+			<td>Date=20080303000000</td>
+			<td>Price=5.1298257</td>
+			<td>Date=20080304000000</td>
+			<td>Price=5.1319487</td>
+			<td>Date=20080305000000</td>
+			<td>Price=5.1340717</td>
+
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080306000000</td>
+			<td>Price=5.1361947</td>
+			<td>Date=20080307000000</td>
+			<td>Price=5.1383177</td>
+			<td>Date=20080308000000</td>
+			<td>Price=5.1404407</td>
+			<td>Date=20080309000000</td>
+			<td>Price=5.1425637</td>
+			<td>Date=20080310000000</td>
+			<td>Price=5.1446867</td>
+
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080311000000</td>
+			<td>Price=5.1468097</td>
+			<td>Date=20080312000000</td>
+			<td>Price=5.1489327</td>
+			<td>Date=20080313000000</td>
+			<td>Price=5.1510557</td>
+			<td>Date=20080314000000</td>
+			<td>Price=5.1531787</td>
+			<td>Date=20080315000000</td>
+			<td>Price=5.1553017</td>
+
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080316000000</td>
+			<td>Price=5.1574247</td>
+			<td>Date=20080317000000</td>
+			<td>Price=5.1595477</td>
+			<td>Date=20080318000000</td>
+			<td>Price=5.1616707</td>
+			<td>Date=20080319000000</td>
+			<td>Price=5.1637937</td>
+			<td>Date=20080320000000</td>
+			<td>Price=5.1659167</td>
+
+		</tr>
+		<td class="name"></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td></td>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080321000000</td>
+			<td>Price=5.1680397</td>
+			<td>Date=20080322000000</td>
+			<td>Price=5.1701627</td>
+			<td>Date=20080323000000</td>
+			<td>Price=5.1722857</td>
+			<td>Date=20080324000000</td>
+			<td>Price=5.1744087</td>
+			<td>Date=20080325000000</td>
+			<td>Price=5.1765317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20080326000000</td>
+			<td>Price=5.1786547</td>
+			<td>Date=20080327000000</td>
+			<td>Price=5.1807777</td>
+			<td>Date=20080328000000</td>
+			<td>Price=5.1829007</td>
+			<td>Date=20080329000000</td>
+			<td>Price=5.1850237</td>
+			<td>Date=20080330000000</td>
+			<td>Price=5.1871467</td>
+			<td>Date=20080331000000</td>
+			<td>Price=5.1892697</td>
+
+		</tr>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071001000000</td>
+			<td>Price=3.1257897</td>
+			<td>Date=20071002000000</td>
+			<td>Price=3.1299027</td>
+			<td>Date=20071003000000</td>
+			<td>Price=3.1212257</td>
+			<td>Date=20071004000000</td>
+			<td>Price=3.1390487</td>
+			<td>Date=20071005000000</td>
+			<td>Price=3.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071006000000</td>
+			<td>Price=3.1365947</td>
+			<td>Date=20071007000000</td>
+			<td>Price=3.1334177</td>
+			<td>Date=20071008000000</td>
+			<td>Price=3.1467407</td>
+			<td>Date=20071009000000</td>
+			<td>Price=3.1499637</td>
+			<td>Date=20071010000000</td>
+			<td>Price=3.1490867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071011000000</td>
+			<td>Price=3.1412097</td>
+			<td>Date=20071012000000</td>
+			<td>Price=3.1456327</td>
+			<td>Date=20071013000000</td>
+			<td>Price=3.1545557</td>
+			<td>Date=20071014000000</td>
+			<td>Price=3.1589787</td>
+			<td>Date=20071015000000</td>
+			<td>Price=3.1532017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071016000000</td>
+			<td>Price=3.1533247</td>
+			<td>Date=20071017000000</td>
+			<td>Price=3.1523477</td>
+			<td>Date=20071018000000</td>
+			<td>Price=3.1657707</td>
+			<td>Date=20071019000000</td>
+			<td>Price=3.1662937</td>
+			<td>Date=20071020000000</td>
+			<td>Price=3.1699167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071021000000</td>
+			<td>Price=3.1631397</td>
+			<td>Date=20071022000000</td>
+			<td>Price=3.1735627</td>
+			<td>Date=20071023000000</td>
+			<td>Price=3.1739857</td>
+			<td>Date=20071024000000</td>
+			<td>Price=3.1743087</td>
+			<td>Date=20071025000000</td>
+			<td>Price=3.1783317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A G Arthmtc True</td>
+			<td>Date=20071026000000</td>
+			<td>Price=3.1789547</td>
+			<td>Date=20071027000000</td>
+			<td>Price=3.1888777</td>
+			<td>Date=20071028000000</td>
+			<td>Price=3.1870007</td>
+			<td>Date=20071029000000</td>
+			<td>Price=3.1817237</td>
+			<td>Date=20071030000000</td>
+			<td>Price=3.1815467</td>
+			<td>Date=20071031000000</td>
+			<td>Price=3.1811697</td>
+			<td></td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080301000000</td>
+			<td>Price=2.1255797</td>
+			<td>Date=20080302000000</td>
+			<td>Price=2.1277027</td>
+			<td>Date=20080303000000</td>
+			<td>Price=2.1298257</td>
+			<td>Date=20080304000000</td>
+			<td>Price=2.1319487</td>
+			<td>Date=20080305000000</td>
+			<td>Price=2.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080306000000</td>
+			<td>Price=2.1361947</td>
+			<td>Date=20080307000000</td>
+			<td>Price=2.1383177</td>
+			<td>Date=20080308000000</td>
+			<td>Price=2.1404407</td>
+			<td>Date=20080309000000</td>
+			<td>Price=2.1425637</td>
+			<td>Date=20080310000000</td>
+			<td>Price=2.1446867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080311000000</td>
+			<td>Price=2.1468097</td>
+			<td>Date=20080312000000</td>
+			<td>Price=2.1489327</td>
+			<td>Date=20080313000000</td>
+			<td>Price=2.1510557</td>
+			<td>Date=20080314000000</td>
+			<td>Price=2.1531787</td>
+			<td>Date=20080315000000</td>
+			<td>Price=2.1553017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080316000000</td>
+			<td>Price=2.1574247</td>
+			<td>Date=20080317000000</td>
+			<td>Price=2.1595477</td>
+			<td>Date=20080318000000</td>
+			<td>Price=2.1616707</td>
+			<td>Date=20080319000000</td>
+			<td>Price=2.1637937</td>
+			<td>Date=20080320000000</td>
+			<td>Price=2.1659167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080321000000</td>
+			<td>Price=2.1680397</td>
+			<td>Date=20080322000000</td>
+			<td>Price=2.1701627</td>
+			<td>Date=20080323000000</td>
+			<td>Price=2.1722857</td>
+			<td>Date=20080324000000</td>
+			<td>Price=2.1744087</td>
+			<td>Date=20080325000000</td>
+			<td>Price=2.1765317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20080326000000</td>
+			<td>Price=2.1786547</td>
+			<td>Date=20080327000000</td>
+			<td>Price=2.1807777</td>
+			<td>Date=20080328000000</td>
+			<td>Price=2.1829007</td>
+			<td>Date=20080329000000</td>
+			<td>Price=2.1850237</td>
+			<td>Date=20080330000000</td>
+			<td>Price=2.1871467</td>
+			<td>Date=20080331000000</td>
+			<td>Price=2.1892697</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071001000000</td>
+			<td>Price=4.1257897</td>
+			<td>Date=20071002000000</td>
+			<td>Price=4.1299027</td>
+			<td>Date=20071003000000</td>
+			<td>Price=4.1212257</td>
+			<td>Date=20071004000000</td>
+			<td>Price=4.1390487</td>
+			<td>Date=20071005000000</td>
+			<td>Price=4.1340717</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071006000000</td>
+			<td>Price=4.1365947</td>
+			<td>Date=20071007000000</td>
+			<td>Price=4.1334177</td>
+			<td>Date=20071008000000</td>
+			<td>Price=4.1467407</td>
+			<td>Date=20071009000000</td>
+			<td>Price=4.1499637</td>
+			<td>Date=20071010000000</td>
+			<td>Price=4.1490867</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071011000000</td>
+			<td>Price=4.1412097</td>
+			<td>Date=20071012000000</td>
+			<td>Price=4.1456327</td>
+			<td>Date=20071013000000</td>
+			<td>Price=4.1545557</td>
+			<td>Date=20071014000000</td>
+			<td>Price=4.1589787</td>
+			<td>Date=20071015000000</td>
+			<td>Price=4.1532017</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071016000000</td>
+			<td>Price=4.1533247</td>
+			<td>Date=20071017000000</td>
+			<td>Price=4.1523477</td>
+			<td>Date=20071018000000</td>
+			<td>Price=4.1657707</td>
+			<td>Date=20071019000000</td>
+			<td>Price=4.1662937</td>
+			<td>Date=20071020000000</td>
+			<td>Price=4.1699167</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071021000000</td>
+			<td>Price=4.1631397</td>
+			<td>Date=20071022000000</td>
+			<td>Price=4.1735627</td>
+			<td>Date=20071023000000</td>
+			<td>Price=4.1739857</td>
+			<td>Date=20071024000000</td>
+			<td>Price=4.1743087</td>
+			<td>Date=20071025000000</td>
+			<td>Price=4.1783317</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528A P Arthmtc True</td>
+			<td>Date=20071026000000</td>
+			<td>Price=4.1789547</td>
+			<td>Date=20071027000000</td>
+			<td>Price=4.1888777</td>
+			<td>Date=20071028000000</td>
+			<td>Price=4.1870007</td>
+			<td>Date=20071029000000</td>
+			<td>Price=4.1817237</td>
+			<td>Date=20071030000000</td>
+			<td>Price=4.1815467</td>
+			<td>Date=20071031000000</td>
+			<td>Price=4.1811697</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+			<td>Cell</td>
+		</tr>
+		<tr>
+
+			<td class="name"><a name="test_Create a Exchange Contract">Create
+					a Exchange Contract</a></td>
+			<td>[Template]</td>
+			<td>Create Exchange Contract</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_P_April_2008</td>
+			<td>Base Quote=GEN 528 B Power Quote</td>
+			<td>Risk Period=Apr 2008</td>
+			<td>Underlying Start=20080401000000</td>
+			<td>Underlying End=20080430000000</td>
+			<td>Future Termination=20080428000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_P_May_2008</td>
+			<td>Base Quote=GEN 528 B Power Quote</td>
+			<td>Risk Period=May 2008</td>
+			<td>Underlying Start=20080501000000</td>
+			<td>Underlying End=20080531000000</td>
+			<td>Future Termination=20080529000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_April_2008</td>
+			<td>Base Quote=GEN 528 B Gas Quote</td>
+			<td>Risk Period=Apr 2008</td>
+			<td>Underlying Start=20080401000000</td>
+			<td>Underlying End=20080430000000</td>
+			<td>Future Termination=20080428000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_May_2008</td>
+			<td>Base Quote=GEN 528 B Gas Quote</td>
+			<td>Risk Period=May 2008</td>
+			<td>Underlying Start=20080501000000</td>
+			<td>Underlying End=20080531000000</td>
+			<td>Future Termination=20080529000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_Mar_08_D</td>
+			<td>Base Quote=GEN 528 B Gas Quote2</td>
+			<td>Risk Period=Mar 2008</td>
+			<td>Underlying Start=20080301000000</td>
+			<td>Underlying End=20080331000000</td>
+			<td>Future Termination=20080329000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_Apr_08_D</td>
+			<td>Base Quote=GEN 528 B Gas Quote2</td>
+			<td>Risk Period=Apr 2008</td>
+			<td>Underlying Start=20080401000000</td>
+			<td>Underlying End=20080430000000</td>
+			<td>Future Termination=20080428000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_May_08_D</td>
+			<td>Base Quote=GEN 528 B Gas Quote2</td>
+			<td>Risk Period=May 2008</td>
+			<td>Underlying Start=20080501000000</td>
+			<td>Underlying End=20080531000000</td>
+			<td>Future Termination=20080529000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_Oct_08</td>
+			<td>Base Quote=GEN 528B G Arthmtc True</td>
+			<td>Risk Period=Oct 2008</td>
+			<td>Underlying Start=20081001000000</td>
+			<td>Underlying End=20081031000000</td>
+			<td>Future Termination=20081029000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_P_Oct_08</td>
+			<td>Base Quote=GEN 528B P Arthmtc True</td>
+			<td>Risk Period=Oct 2008</td>
+			<td>Underlying Start=20081001000000</td>
+			<td>Underlying End=20081031000000</td>
+			<td>Future Termination=20081029000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_Mar_08</td>
+			<td>Base Quote=GEN 528B G Arthmtc True</td>
+			<td>Risk Period=Mar 2008</td>
+			<td>Underlying Start=20080301000000</td>
+			<td>Underlying End=20080331000000</td>
+			<td>Future Termination=20080328000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_P_Mar_08</td>
+			<td>Base Quote=GEN 528B P Arthmtc True</td>
+			<td>Risk Period=Mar 2008</td>
+			<td>Underlying Start=20080301000000</td>
+			<td>Underlying End=20080331000000</td>
+			<td>Future Termination=20080328000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_G_Oct_07</td>
+			<td>Base Quote=GEN 528B G Arthmtc True</td>
+			<td>Risk Period=Oct 2007</td>
+			<td>Underlying Start=20071001000000</td>
+			<td>Underlying End=20071031000000</td>
+			<td>Future Termination=20071029000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="name"></td>
+			<td>GEN 528_P_Oct_07</td>
+			<td>Base Quote=GEN 528B P Arthmtc True</td>
+			<td>Risk Period=Oct 2007</td>
+			<td>Underlying Start=20071001000000</td>
+			<td>Underlying End=20071031000000</td>
+			<td>Future Termination=20071029000000</td>
+			<td>Future Settlement Rule Ind=1</td>
+			<td>Market Data Currency=EUR</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
