@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list id="d0bc2a03-e449-4ab7-8a74-d1bab4e0f263" name="Default" comment="" />
     <list default="true" id="c9f0f050-fc5e-4832-8ae2-693f42702ba2" name="Commit Changes" comment="Commit Changes">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.robot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/settle_future_prices_on_index_precision/data_setup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/xchange_company.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/xchange_product.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/1.0/xchange_strategy_mapping.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java" afterPath="$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="TestDataReleasePrepare.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="144" column="47" lean-forward="true" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
+            <state relative-caret-position="249">
+              <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
               <folding>
                 <element signature="e#0#5945#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -77,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/test/gitapi/GitHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="535">
-              <caret line="93" column="28" lean-forward="true" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+              <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
               <folding>
                 <element signature="e#0#3788#0" expanded="true" />
               </folding>
@@ -1069,11 +1060,19 @@
       <option name="project" value="LOCAL" />
       <updated>1540382401039</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Commit Changes">
+      <created>1540383096703</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1540383096703</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1092" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1095,7 +1094,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32987553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38541666" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38541666" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4625" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2468017" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1366,7 +1365,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/test/gitapi/GitHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
-          <caret line="93" column="28" lean-forward="true" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
+          <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
           <folding>
             <element signature="e#0#3788#0" expanded="true" />
           </folding>
@@ -1375,8 +1374,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="144" column="47" lean-forward="true" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
+        <state relative-caret-position="249">
+          <caret line="146" column="0" lean-forward="false" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
             <element signature="e#0#5945#0" expanded="true" />
             <element signature="imports" expanded="true" />
