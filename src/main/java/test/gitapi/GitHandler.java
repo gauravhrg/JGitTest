@@ -6,7 +6,6 @@ package test.gitapi;
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.util.List;
 import org.eclipse.jgit.api.CommitCommand;
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.MergeResult;
@@ -38,15 +37,14 @@ public class GitHandler {
     this.gitConfig = gitConfig;
   }
 
-  public boolean commitFiles(List<File> files)
+  public boolean commitFiles()
       throws GitAPIException, IOException, URISyntaxException {
 
     git = checkOutRepo();
     System.out.println("Checked out repo");
 
-    for (File file : files) {
-      commitFile(file.getName());
-    }
+    commitFile();
+
     System.out.println("Pushing Files... ");
     return pushFile(git, gitConfig);
   }
@@ -87,9 +85,9 @@ public class GitHandler {
     return git;
   }
 
-  private RevCommit commitFile(String fileNamePattern) throws URISyntaxException, GitAPIException {
+  private RevCommit commitFile() throws URISyntaxException, GitAPIException {
 
-    git.add().addFilepattern(fileNamePattern).call();
+    git.add().addFilepattern(".").call();
     RemoteAddCommand remoteAddCommand = git.remoteAdd();
     remoteAddCommand.setName(gitConfig.getRemote());
     remoteAddCommand.setUri(new URIish(gitConfig.getHttpUrl()));

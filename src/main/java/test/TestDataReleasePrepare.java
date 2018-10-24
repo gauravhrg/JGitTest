@@ -19,6 +19,7 @@ import org.apache.commons.io.filefilter.NameFileFilter;
 import org.apache.commons.io.filefilter.NotFileFilter;
 import org.apache.commons.io.filefilter.OrFileFilter;
 import org.apache.commons.io.filefilter.SuffixFileFilter;
+import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidConfigurationException;
@@ -36,19 +37,20 @@ public class TestDataReleasePrepare {
   private String minorVersion;
   private File releaseDirectory;
   private File updatesDirectory;
-  private List<File> sqlsToCommit;
   private GitHandler gitHandler;
   private String version;
 
   private TestDataReleasePrepare(String[] args) throws Exception {
     initialize(args);
-    validate();
   }
 
   public static void main(String[] args) throws Exception {
 
     validateArgs(args);
     TestDataReleasePrepare testDataReleasePrepare = new TestDataReleasePrepare(args);
+    if (!testDataReleasePrepare.validate()) {
+      return;
+    }
     testDataReleasePrepare.moveFilesFromUpdatesToReleasedDir();
     testDataReleasePrepare.commitFiles();
   }
@@ -109,7 +111,7 @@ public class TestDataReleasePrepare {
     return majorVersion + DOT + minorVersion;
   }
 
-  private void validate() throws Exception {
+  private boolean validate() throws Exception {
 
     if (majorVersion == null || minorVersion == null) {
       throw new Exception("Provided version is invalid");
@@ -120,24 +122,27 @@ public class TestDataReleasePrepare {
     if (!releaseDirectory.exists() && !releaseDirectory.mkdirs()) {
       throw new Exception("Release directory path is invalid");
     }
+
+    if (ArrayUtils.isEmpty(this.updatesDirectory.list())) {
+      System.out.println("Update directory is empty");
+      return false;
+    }
+    return true;
   }
 
 
   private void moveFilesFromUpdatesToReleasedDir() throws IOException {
 
     Iterator<File> files = getFiles(updatesDirectory, new String[]{"html", "txt", "robot"});
-    sqlsToCommit = new ArrayList<>();
 
     while (files.hasNext()) {
       File fileToUpdate = files.next();
       File updatedFile = updateFile(fileToUpdate);
       boolean deleteInvalidFiles = false;
       validateFile(updatedFile, deleteInvalidFiles);
-//      sqlsToCommit.add(updatedFile);
+
     }
 //    FileUtils.cleanDirectory(updatesDirectory);
-    sqlsToCommit.add(releaseDirectory);
-    sqlsToCommit.add(updatesDirectory);
   }
 
   private File updateFile(File fileToUpdate) throws IOException {
@@ -170,12 +175,8 @@ public class TestDataReleasePrepare {
 
   private boolean commitFiles() throws IOException, GitAPIException, URISyntaxException {
 
-    if (sqlsToCommit.isEmpty()) {
-      System.out.println("No changes to commit");
-      return true;
-    }
     System.out.println("Committing files... ");
-    boolean filesCommitted = gitHandler.commitFiles(sqlsToCommit);
+    boolean filesCommitted = gitHandler.commitFiles();
     if (filesCommitted) {
       System.out.println("Files committed successfully");
     }
