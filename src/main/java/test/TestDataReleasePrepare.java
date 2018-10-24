@@ -25,7 +25,7 @@ import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 import test.constants.RelativePathConstants;
 import test.gitapi.GitConfig;
 import test.gitapi.GitHandler;
-import test.validate.Validator;
+import test.validate.ValidatorBuilder;
 import test.validate.ValidatorI;
 
 /**
@@ -45,6 +45,7 @@ public class TestDataReleasePrepare {
   private String majorVersion;
   private String minorVersion;
   private GitHandler gitHandler;
+  private List<File> invalidFiles = new ArrayList<>();
 
   private TestDataReleasePrepare(String[] args) {
     this.args = args;
@@ -57,6 +58,10 @@ public class TestDataReleasePrepare {
     this.validateConfiguration();
     this.gitHandler.checkOutRepo();
     this.moveFilesToReleaseDir();
+
+    if (!invalidFiles.isEmpty()) {
+      throw new Exception(" Some files have invalid paths");
+    }
     boolean isCommitSuccessful = this.commitAndPushFiles();
     if (!isCommitSuccessful) {
       throw new Exception("Commit is unsuccessful");
@@ -144,13 +149,13 @@ public class TestDataReleasePrepare {
   private void moveFilesToReleaseDir() throws IOException {
 
     Iterator<File> files = getFiles(updatesDirectory, new String[]{"html", "txt", "robot"});
-    List<File> invalidFiles = new ArrayList<>();
 
     while (files.hasNext()) {
       File fileToUpdate = files.next();
       File updatedFile = updateFile(fileToUpdate);
-      if (validateFile(updatedFile)) {
+      if (!validateFile(updatedFile)) {
         invalidFiles.add(updatedFile);
+        System.out.println("Invalid file: " + updatedFile);
       }
     }
   }
@@ -164,7 +169,7 @@ public class TestDataReleasePrepare {
 
   private boolean validateFile(File fileToValidate) throws IOException {
 
-    ValidatorI validator = Validator.getValidator(fileToValidate);
+    ValidatorI validator = ValidatorBuilder.getValidator(fileToValidate);
     return validator.validate();
 
   }

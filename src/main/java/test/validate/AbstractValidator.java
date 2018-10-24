@@ -14,7 +14,8 @@ abstract class AbstractValidator implements ValidatorI {
   File fileToValidate;
 
   void printMessage(String str, String absPath, String attributeId) {
-    System.err.println("Error: " + str + " --> " + absPath + "-->" + attributeId);
+    System.err.println(
+        "Error: " + str + fileToValidate.getName() + " --> " + absPath + "-->" + attributeId);
   }
 
   String getAbsolutePath(String line) {

@@ -11,9 +11,9 @@ import org.apache.commons.io.FilenameUtils;
 /**
  * Created by gaurav.gandhi on 22-10-2018.
  */
-public class Validator {
+public class ValidatorBuilder {
 
-  private Validator() {
+  private ValidatorBuilder() {
   }
 
   public static ValidatorI getValidator(File fileToValidate) {

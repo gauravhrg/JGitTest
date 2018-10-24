@@ -1,5 +1,5 @@
 *** Settings ***
-Resource          ../../../../../../resources/global_resource.txt
+Resource          ../../../../../resources/global_resource.txt
 
 *** Keywords ***
 Save Fx For Historical Dates

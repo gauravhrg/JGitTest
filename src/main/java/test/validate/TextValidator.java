@@ -20,11 +20,15 @@ public class TextValidator extends AbstractValidator {
 
   @Override
   public boolean validate() throws IOException {
+
     List<String> lines = FileUtils.readLines(fileToValidate, RelativePathConstants.ENCODING_UTF_8);
     boolean flag = true;
+
     for (String line : lines) {
-      if (line.contains(RelativePathConstants.SINGLE_DOT_APPENDER) || line.toLowerCase()
-          .contains("resource")) {
+
+      if (line.contains(RelativePathConstants.SINGLE_DOT_APPENDER)
+          || line.toLowerCase().contains("resource")) {
+
         String resourcePath = getAbsolutePath(line);
         File resourceFile = new File(resourcePath);
         if (!resourceFile.exists() && !resourceFile.getParentFile().exists()) {
