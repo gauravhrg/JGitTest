@@ -1,4 +1,4 @@
-package test;/*
+package test.constants;/*
   Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
 
@@ -7,7 +7,8 @@ import java.util.StringJoiner;
 /**
  * Created by gaurav.gandhi on 24-10-2018.
  */
-class RelativePathConstants {
+@SuppressWarnings("SameParameterValue")
+public class RelativePathConstants {
 
   public static final String SINGLE_DOT_APPENDER = "./";
 

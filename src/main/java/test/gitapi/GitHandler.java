@@ -38,30 +38,30 @@ public class GitHandler {
   }
 
   public boolean commitFiles()
-      throws GitAPIException, IOException, URISyntaxException {
+      throws GitAPIException, URISyntaxException {
 
-    git = checkOutRepo();
-    System.out.println("Checked out repo");
-
-    commitFile();
+    RevCommit commit = commitFile();
+    System.out.println(commit.getFullMessage());
 
     System.out.println("Pushing Files... ");
-    return pushFile(git, gitConfig);
+    return pushFiles();
   }
 
-  private Git checkOutRepo() throws GitAPIException, IOException {
+  public void checkOutRepo() throws GitAPIException, IOException {
 
+    System.out.println("Checking out repo: " + gitConfig.getHttpUrl());
     File repoDir = new File(gitConfig.getRepoDir());
     if (repoDir.exists()) {
       System.out.println("Repo already exists. Pulling changes...");
-      return pullChanges(gitConfig);
+      git = pullChanges(gitConfig);
     } else {
       System.out.println("Cloning repo...");
-      return cloneRepository(gitConfig);
+      git = cloneRepository(gitConfig);
     }
   }
 
-  private static Git cloneRepository(GitConfig gitConfig) throws GitAPIException {
+
+  private Git cloneRepository(GitConfig gitConfig) throws GitAPIException {
     return Git.cloneRepository()
         .setURI(gitConfig.getHttpUrl())
         .setDirectory(new File(gitConfig.getRepoDir()))
@@ -69,11 +69,11 @@ public class GitHandler {
         .call();
   }
 
-  private static Repository getRepo(GitConfig gitConfig) throws IOException {
+  private Repository getRepo(GitConfig gitConfig) throws IOException {
     return new FileRepository(gitConfig.getRepoDir() + File.separator + ".git");
   }
 
-  private static Git pullChanges(GitConfig gitConfig) throws GitAPIException, IOException {
+  private Git pullChanges(GitConfig gitConfig) throws GitAPIException, IOException {
 
     Git git = new Git(getRepo(gitConfig));
     PullCommand pullCmd = git.pull();
@@ -99,7 +99,7 @@ public class GitHandler {
     return commitCommand.call();
   }
 
-  private static boolean pushFile(Git git, GitConfig gitConfig) throws GitAPIException {
+  private boolean pushFiles() throws GitAPIException {
 
     PushCommand pushCommand = git.push();
     pushCommand.setRemote(gitConfig.getRemote());

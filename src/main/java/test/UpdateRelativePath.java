@@ -2,11 +2,6 @@ package test;/*
   Copyright 2000-2018 Triple Point Technology. All rights reserved.
  */
 
-import static test.RelativePathConstants.DOUBLE_DOT_APPENDER;
-import static test.RelativePathConstants.DOUBLE_DOT_APPENDER_WITH_PREFIX;
-import static test.RelativePathConstants.SINGLE_DOT_APPENDER;
-import static test.RelativePathConstants.SINGLE_DOT_APPENDER_WITH_PREFIX;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,6 +9,7 @@ import java.util.List;
 import java.util.Stack;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
+import test.constants.RelativePathConstants;
 
 /**
  * Created by gaurav.gandhi on 22-10-2018.
@@ -112,8 +108,8 @@ class UpdateRelativePath {
         endIndex = getIndex(
             line,
             startIndex,
-            SINGLE_DOT_APPENDER_WITH_PREFIX,
-            DOUBLE_DOT_APPENDER_WITH_PREFIX
+            RelativePathConstants.SINGLE_DOT_APPENDER_WITH_PREFIX,
+            RelativePathConstants.DOUBLE_DOT_APPENDER_WITH_PREFIX
         );
 
         if (endIndex == -1) {
@@ -125,8 +121,8 @@ class UpdateRelativePath {
           endIndex = getIndex(
               line,
               startIndex,
-              SINGLE_DOT_APPENDER,
-              DOUBLE_DOT_APPENDER
+              RelativePathConstants.SINGLE_DOT_APPENDER,
+              RelativePathConstants.DOUBLE_DOT_APPENDER
           );
         }
         StringBuilder updatedLine;
@@ -159,15 +155,15 @@ class UpdateRelativePath {
       if (depthDifference > 0) {
         updatedLine.append(
             StringUtils.replaceOnce(
-                DOUBLE_DOT_APPENDER,
-                DOUBLE_DOT_APPENDER,
-                StringUtils.repeat(DOUBLE_DOT_APPENDER, depthDifference)));
+                RelativePathConstants.DOUBLE_DOT_APPENDER,
+                RelativePathConstants.DOUBLE_DOT_APPENDER,
+                StringUtils.repeat(RelativePathConstants.DOUBLE_DOT_APPENDER, depthDifference)));
 
       } else if (depthDifference < 0) {
         updatedLine.append(
             StringUtils.replaceOnce(
-                DOUBLE_DOT_APPENDER,
-                DOUBLE_DOT_APPENDER,
+                RelativePathConstants.DOUBLE_DOT_APPENDER,
+                RelativePathConstants.DOUBLE_DOT_APPENDER,
                 StringUtils.repeat("", Math.abs(depthDifference))));
       }
 
@@ -176,8 +172,8 @@ class UpdateRelativePath {
       endIndex = getIndex(
           line,
           startIndex,
-          SINGLE_DOT_APPENDER_WITH_PREFIX,
-          DOUBLE_DOT_APPENDER_WITH_PREFIX
+          RelativePathConstants.SINGLE_DOT_APPENDER_WITH_PREFIX,
+          RelativePathConstants.DOUBLE_DOT_APPENDER_WITH_PREFIX
       );
     }
     updatedLine.append(line.substring(startIndex));

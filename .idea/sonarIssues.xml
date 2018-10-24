@@ -188,6 +188,11 @@
             <set />
           </value>
         </entry>
+        <entry key="D:/Git1/r/r/tpt-cxl-robot-tests/src/test/robotframework/env.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="D:/Git1/r/r/tpt-cxl-robot-tests/src/test/robotframework/testdata/reference_data/Released/8.16/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.robot">
           <value>
             <set />
@@ -248,12 +253,17 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java">
+        <entry key="$PROJECT_DIR$/src/main/java/test/RelativePathConstants.java">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/src/main/java/test/gitapi/GitHandler.java">
+        <entry key="$PROJECT_DIR$/src/main/java/test/validate/ValidateRelativePath.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/test/validator/ValidateRelativePath.java">
           <value>
             <set />
           </value>

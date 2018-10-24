@@ -3,8 +3,6 @@
  */
 package test;
 
-import static test.RelativePathConstants.DOT;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -24,38 +22,49 @@ import org.apache.commons.lang.StringUtils;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.api.errors.InvalidConfigurationException;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
+import test.constants.RelativePathConstants;
 import test.gitapi.GitConfig;
 import test.gitapi.GitHandler;
+import test.validate.Validator;
+import test.validate.ValidatorI;
 
 /**
  * Created by gaurav.gandhi on 19-10-2018.
  */
 public class TestDataReleasePrepare {
 
-
-  private String majorVersion;
-  private String minorVersion;
-  private File releaseDirectory;
-  private File updatesDirectory;
-  private GitHandler gitHandler;
-  private String version;
-
-  private TestDataReleasePrepare(String[] args) throws Exception {
-    initialize(args);
-  }
+  private final String[] args;
 
   public static void main(String[] args) throws Exception {
-
-    validateArgs(args);
-    TestDataReleasePrepare testDataReleasePrepare = new TestDataReleasePrepare(args);
-    if (!testDataReleasePrepare.validate()) {
-      return;
-    }
-    testDataReleasePrepare.moveFilesFromUpdatesToReleasedDir();
-    testDataReleasePrepare.commitFiles();
+    new TestDataReleasePrepare(args).prepareRelease();
   }
 
-  private static void validateArgs(String[] args) throws Exception {
+  private File releaseDirectory;
+  private File updatesDirectory;
+  private String version;
+  private String majorVersion;
+  private String minorVersion;
+  private GitHandler gitHandler;
+
+  private TestDataReleasePrepare(String[] args) {
+    this.args = args;
+  }
+
+  private void prepareRelease() throws Exception {
+
+    this.validateArgs();
+    this.initializeConfiguration();
+    this.validateConfiguration();
+    this.gitHandler.checkOutRepo();
+    this.moveFilesToReleaseDir();
+    boolean isCommitSuccessful = this.commitAndPushFiles();
+    if (!isCommitSuccessful) {
+      throw new Exception("Commit is unsuccessful");
+    }
+    FileUtils.cleanDirectory(updatesDirectory);
+  }
+
+  private void validateArgs() throws Exception {
 
     System.out.println(Arrays.toString(args));
 
@@ -72,7 +81,7 @@ public class TestDataReleasePrepare {
     }
   }
 
-  private void initialize(String[] args) throws InvalidConfigurationException {
+  private void initializeConfiguration() throws InvalidConfigurationException {
 
     version = getVersion(args[0]);
     System.err.println("Copying files from updates to " + version + " version");
@@ -80,6 +89,7 @@ public class TestDataReleasePrepare {
     String refDir = args[1] + File.separator;
     this.updatesDirectory = new File(refDir + "Updates");
     this.releaseDirectory = new File(refDir + "Released" + File.separator + version);
+
     GitConfig gitConfig = GitConfig.
         builder().setHttpUrl(args[2])
         .setRepoDir(args[3])
@@ -88,6 +98,7 @@ public class TestDataReleasePrepare {
         .setCredentials(new UsernamePasswordCredentialsProvider(args[6], args[7]))
         .setCommitMessage("Committed testdata scripts for release: " + version)
         .build();
+
     this.gitHandler = new GitHandler(gitConfig);
   }
 
@@ -97,52 +108,51 @@ public class TestDataReleasePrepare {
       version = version.substring(0, version.indexOf("-SNAPSHOT"));
     }
 
-    int majorVersionIndex = version.indexOf(DOT, 0);
+    int majorVersionIndex = version.indexOf(RelativePathConstants.DOT, 0);
     majorVersion = version.substring(0, majorVersionIndex);
 
     majorVersionIndex++;
 
-    int minorVersionIndex = version.indexOf(DOT, majorVersionIndex);
+    int minorVersionIndex = version.indexOf(RelativePathConstants.DOT, majorVersionIndex);
     if (minorVersionIndex != -1) {
       minorVersion = version.substring(majorVersionIndex, minorVersionIndex);
     } else {
       minorVersion = version.substring(majorVersionIndex);
     }
-    return majorVersion + DOT + minorVersion;
+    return majorVersion + RelativePathConstants.DOT + minorVersion;
   }
 
-  private boolean validate() throws Exception {
+  private void validateConfiguration() throws Exception {
 
-    if (majorVersion == null || minorVersion == null) {
-      throw new Exception("Provided version is invalid");
+    if (StringUtils.isEmpty(version) ||
+        StringUtils.isEmpty(majorVersion) ||
+        StringUtils.isEmpty(minorVersion)) {
+      throw new Exception("Release version is invalid");
     }
     if (!updatesDirectory.exists()) {
       throw new Exception("Update directory path is invalid");
     }
     if (!releaseDirectory.exists() && !releaseDirectory.mkdirs()) {
-      throw new Exception("Release directory path is invalid");
+      throw new Exception("Error while creating release directory");
     }
-
     if (ArrayUtils.isEmpty(this.updatesDirectory.list())) {
-      System.out.println("Update directory is empty");
-      return false;
+      throw new Exception("Update directory is empty");
     }
-    return true;
   }
 
 
-  private void moveFilesFromUpdatesToReleasedDir() throws IOException {
+  private void moveFilesToReleaseDir() throws IOException {
 
     Iterator<File> files = getFiles(updatesDirectory, new String[]{"html", "txt", "robot"});
+    List<File> invalidFiles = new ArrayList<>();
 
     while (files.hasNext()) {
       File fileToUpdate = files.next();
       File updatedFile = updateFile(fileToUpdate);
-      boolean deleteInvalidFiles = false;
-      validateFile(updatedFile, deleteInvalidFiles);
-
+      if (validateFile(updatedFile)) {
+        invalidFiles.add(updatedFile);
+      }
     }
-    FileUtils.cleanDirectory(updatesDirectory);
   }
 
   private File updateFile(File fileToUpdate) throws IOException {
@@ -152,13 +162,11 @@ public class TestDataReleasePrepare {
     return updateRelativePath.updateFile();
   }
 
-  private void validateFile(File updatedFile, boolean deleteIfInvalid) throws IOException {
+  private boolean validateFile(File fileToValidate) throws IOException {
 
-    ValidateRelativePath validator = new ValidateRelativePath(updatedFile);
-    boolean isFileValid = validator.validate();
-    if (!isFileValid && deleteIfInvalid) {
-      FileUtils.forceDelete(updatedFile);
-    }
+    ValidatorI validator = Validator.getValidator(fileToValidate);
+    return validator.validate();
+
   }
 
   private Iterator<File> getFiles(File iteratorDir, String[] fileTypes) {
@@ -173,7 +181,7 @@ public class TestDataReleasePrepare {
             new NotFileFilter(new OrFileFilter(dirNameFilters)));
   }
 
-  private boolean commitFiles() throws IOException, GitAPIException, URISyntaxException {
+  private boolean commitAndPushFiles() throws GitAPIException, URISyntaxException {
 
     System.out.println("Committing files... ");
     boolean filesCommitted = gitHandler.commitFiles();
