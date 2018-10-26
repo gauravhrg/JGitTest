@@ -2,7 +2,6 @@ test\UpdateRelativePath.class
 test\gitapi\GitConfig$1.class
 test\TestDataReleasePrepare.class
 test\constants\RelativePathConstants.class
-test\ValidateRelativePath.class
 test\gitapi\GitConfig$GitConfigBuilder.class
 test\gitapi\GitHandler.class
 test\gitapi\GitConfig.class

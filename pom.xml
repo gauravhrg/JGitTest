@@ -16,10 +16,14 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <branch></branch>
-    <remote></remote>
-    <userName></userName>
-    <password></password>
+    <testdata.release.dir.refData>${project.basedir}/src/main/java/robotframework/testdata/reference_data</testdata.release.dir.refData>
+    <testdata.release.dir.repo>path_of_robot_repo</testdata.release.dir.repo>
+    <testdata.release.git.branch>refs/heads/master</testdata.release.git.branch>
+    <testdata.release.git.password>password</testdata.release.git.password>
+    <testdata.release.git.remote>origin</testdata.release.git.remote>
+    <testdata.release.git.url>${project.scm.url}</testdata.release.git.url>
+    <testdata.release.git.userName>username</testdata.release.git.userName>
+    <testdata.release.version>${project.version}</testdata.release.version>
   </properties>
   <build>
     <plugins>
@@ -88,16 +92,14 @@
                 <configuration>
                   <mainClass>test.TestDataReleasePrepare</mainClass>
                   <arguments>
-                    <argument>${project.version}</argument>
-                    <argument>
-                      ${project.basedir}/src/main/java/robotframework/testdata/reference_data
-                    </argument>
-                    <argument>${project.scm.url}</argument>
-                    <argument>${project.basedir}</argument>
-                    <argument>${branch}</argument>
-                    <argument>${remote}</argument>
-                    <argument>${userName}</argument>
-                    <argument>${password}</argument>
+                    <argument>${testdata.release.version}</argument>
+                    <argument>${testdata.release.dir.refData}</argument>
+                    <argument>${testdata.release.git.url}</argument>
+                    <argument>${testdata.release.dir.repo}</argument>
+                    <argument>${testdata.release.git.branch}</argument>
+                    <argument>${testdata.release.git.remote}</argument>
+                    <argument>${testdata.release.git.userName}</argument>
+                    <argument>${testdata.release.git.password}</argument>
                   </arguments>
                 </configuration>
               </execution>
