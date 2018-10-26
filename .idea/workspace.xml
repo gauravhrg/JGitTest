@@ -3,10 +3,34 @@
   <component name="ChangeListManager">
     <list id="d0bc2a03-e449-4ab7-8a74-d1bab4e0f263" name="Default" comment="" />
     <list default="true" id="c9f0f050-fc5e-4832-8ae2-693f42702ba2" name="Commit Changes" comment="Commit Changes">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.robot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.robot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/settle_future_prices_on_index_precision/data_setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/xchange_company.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/xchange_product.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Released/2.22/xchange_strategy_mapping.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/00_level" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/apo_with_volatility_less_than_0.5_percent/apo_with_volatility_less_than_0.5_percent.robot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/fx_exposure_issue_with_asof_and_changesince/fx_exposure_issue_with_asof_and_changesince.robot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/settle_future_prices_on_index_precision/data_setup.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/xchange_company.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/xchange_product.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/robotframework/testdata/reference_data/Updates/xchange_strategy_mapping.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/UpdateRelativePath.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/constants/RelativePathConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/gitapi/GitConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/gitapi/GitHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/validate/AbstractValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/validate/HtmlValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/validate/TextValidator.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/validate/ValidatorBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/test/validate/ValidatorI.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path=".idea/" />
@@ -23,8 +47,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="194">
+              <caret line="92" column="68" lean-forward="true" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -250,32 +274,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="POC_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POC_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="POC_2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -808,8 +806,8 @@
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32883817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.384375" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46041667" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.384375" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46041667" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25799337" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="The R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -943,12 +941,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3096">
           <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#6451#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1626#1627#0" expanded="false" />
-            <element signature="e#1652#1653#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1144,23 +1137,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="173" column="49" lean-forward="true" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#6451#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1626#1627#0" expanded="false" />
-            <element signature="e#1652#1653#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="194">
+          <caret line="92" column="68" lean-forward="true" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TestDataReleasePrepare.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="154" column="43" lean-forward="false" selection-start-line="154" selection-start-column="43" selection-end-line="154" selection-end-column="43" />
           <folding />
         </state>
       </provider>
