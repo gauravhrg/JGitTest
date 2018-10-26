@@ -1,0 +1,13 @@
+*** Settings ***
+Documentation     Test Data Keywords for ref data generation
+Default Tags
+Resource          ../../../../resources/global_resource.txt
+
+*** Test Cases ***
+Create Test Data
+    Test Data
+
+*** Keywords ***
+Test Data
+    Put Cost Type    Outport Basis    Outport Basis Charge    Misc Charge    \    Yes    No
+    ...    \    Show as a separate cost    No    No

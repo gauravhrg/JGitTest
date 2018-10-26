@@ -1,0 +1,25 @@
+*** Settings ***
+Documentation     Test Data Keywords for ref data generation
+Default Tags      trunk
+Resource          ../../../../resources/global_resource.txt
+
+*** Test Cases ***
+Create Test Data
+    Test Data
+
+*** Keywords ***
+Test Data
+    Put Strategy        XCE-237 Strategy1     ${empty}    Strategy     Global Process Group    ${empty}      ${empty}     ${empty}      ${empty}
+                ...     ${empty}     ${empty}     ${empty}      ${empty}      ${empty}      ${empty}     ${empty}     Open       Yes     21-04-2008      No      No      No
+
+    Put Strategy        XCE-237 Strategy2     ${empty}    Strategy     Global Process Group    ${empty}      ${empty}     ${empty}      ${empty}
+                ...     ${empty}     ${empty}     ${empty}      ${empty}      ${empty}      ${empty}     ${empty}     Open       Yes     21-04-2008      No      No      No
+
+    Put Strategy        XCE-237 Strategy3     ${empty}    Strategy     Global Process Group    ${empty}      ${empty}     ${empty}      ${empty}
+                ...     ${empty}     ${empty}     ${empty}      ${empty}      ${empty}      ${empty}     ${empty}     Open       Yes     21-04-2008      No      No      No
+
+    Create Xchange Trader Mapping      ICE      tpoint_gui3      Reliance Trader
+
+    Create Xchange Strategy Mapping    ICE    ${EMPTY}     9833    ICE Test     XCE-237 Trader3     XCE-237 Strategy3
+    Create Xchange Strategy Mapping    ICE	  sblaney	     9833		 ${EMPTY}     XCE-237 Trader2	    XCE-237 Strategy2
+    Create Xchange Strategy Mapping    ICE    sblaney      9833    ICE Test     XCE-237 Trader1     XCE-237 Strategy1

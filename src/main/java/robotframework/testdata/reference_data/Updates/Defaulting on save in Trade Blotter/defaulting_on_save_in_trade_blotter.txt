@@ -1,0 +1,34 @@
+*** Settings ***
+Documentation     Test Data Keywords for ref data generation
+Default Tags      trunk
+Resource          ../../../../resources/global_resource.txt
+
+*** Test Cases ***
+Create Test Data
+    Test Data
+
+*** Keywords ***
+Test Data
+    Create Defaulting Key    Commodity Key    Commodity Key    Active=1
+    Create Defaulting Key    Sust Key    Sust Key    Active=1
+    Create Defaulting Key    Sust Attr Key    Sust Attr Key    Active=1
+    Add Defaulting Key Details    Commodity Key    Key Field=Commodity    Only default if blank=No    Active=1
+    Add Defaulting Key Details    Sust Key    Key Field=Sust Grid Credit Commodity    Only default if blank=No    Active=1
+    Add Defaulting Key Details    Sust Key    Key Field=Sust Grid Scheme    Only default if blank=No    Active=1
+    Add Defaulting Key Details    Sust Key    Key Field=Sust Grid Term Component    Only default if blank=No    Active=1
+    Add Defaulting Key Details    Sust Attr Key    Key Field=Fuel Code    Only default if blank=No    Active=1
+    Create Defaulting Sequence    Commodity Seq    Commodity Seq    Active
+    Create Defaulting Sequence    Sust Seq    Sust Seq    Active
+    Add Defaulting Sequence Details    Commodity Seq    Defaulting Key=Commodity Key    Sequence Number=1    Active=1
+    Add Defaulting Sequence Details    Sust Seq    Defaulting Key=Sust Key    Sequence Number=1    Active=1
+    Create Default Mapping    Commodity Sust Map    Commodity Sust Mapping    Input Default Sequence=Commodity Seq    Output Default Key=Sust Key    Multirow Allowed=Yes    Active=1
+    Create Default Mapping    Sust Attribute Map    Sust Attribute Mapping    Input Default Sequence=Sust Seq    Output Default Key=Sust Attr Key    Multirow Allowed=Yes    Active=1
+    Create Default Event    Commodity Sust Map    Default Event=Trade    Effective Date Type=Trade Date    Active=1
+    Create Default Event    Sust Attribute Map    Default Event=Trade    Effective Date Type=Trade Date    Active=1
+    Create Sustainability Scheme Definition    LCFS_TB    \    1    4    Standard    Mean Qty
+    ...    ${EMPTY}    ${EMPTY}    Active
+    Create Sustainability Scheme Attribute Link    LCFS_TB    Fuel Code    Value Calculated=No      Dependent Attribute=${EMPTY}       Calculation Rule=User Defined
+    ...    Dependent Attribute2=${EMPTY}    Trade Input Required=No    Calculation Expression=${EMPTY}    Delivery Input Required=No    Seq Num=1      Min Value=${EMPTY}
+    ...    Flow to Confirmations=0    Aggregate Function=N/A    Active=1
+    Create Sustainability Scheme Commodity Link    LCFS_TB    Commodity=LCFS    Active=1
+    Create Sustainability Scheme Version    LCFS_TB    Version1    ${EMPTY}

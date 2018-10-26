@@ -1,0 +1,12 @@
+*** Settings ***
+Documentation     Test Data Keywords for ref data generation
+Default Tags
+Resource          ../../../../resources/global_resource.txt
+
+*** Test Cases ***
+Create Test Data
+    Test Data
+
+*** Keywords ***
+Test Data
+    Add Internal Company And Trade Type To UDF    Oil UDF    IC00    Physical Fixed (C&S)    No
